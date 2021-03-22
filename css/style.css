@@ -2163,22 +2163,18 @@ section.mission .owl-theme .owl-controls {
 /*---------------------------------
     Footer
 -----------------------------------*/
-.footer{
-  background-color: black;
-  height: 200px; 
-}
 
 section.footer {
-  /* position: relative;
+  position: relative;
   overflow: hidden;
   background-image: url("../img/map.png");
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   /*    background-attachment: fixed;*/
-  /* background-size: cover; */
+  background-size: cover;
   /*    background-position: center center;*/
 }
 
-/* section.footer .container {
+section.footer .container {
   padding-bottom: 50px;
 }
 
@@ -2249,7 +2245,7 @@ section.footer .news-widget .news-wrap .info {
 
 section.footer .news-widget .news-wrap {
   margin-bottom: 30px;
-} */
+}
 
 /*----------- copyright bar ------------*/
 
@@ -2272,7 +2268,6 @@ section.footer .copyright .message {
   padding-top: 20px;
   font-size: 16px;
   color: #999999;
-  padding-top: 150px;
 }
 
 section.footer .copyright .social {
@@ -2325,10 +2320,10 @@ section.footer .copyright .social a i {
     Logo
 -----------------------------------*/
 
-/* .logo {
+.logo {
   /*max-width: 230px;*/
   /*clear:both;*/
-/* }
+}
 
 .logo i {
   float: left;
@@ -2361,7 +2356,7 @@ section.footer .copyright .social a i {
   font-size: 12px;
   opacity: 0.7;
   font-weight: 300;
-} */ */
+}
 
 /*---------------------------------
     Gallery
@@ -2547,42 +2542,48 @@ section.full-width .gallery-row {
     Header
 -----------------------------------*/
 
-
-
-/* section.header {
-  overflow-x: hidden;
-  max-width: 100%;
-} */
-
-section.header .header-bg {
-  background: url(../img/banner.jpg);
-                background-size: cover;
-                background-position: center;
-                
-                height: 100vh;
+section.header * {
+  vertical-align: top;
 }
 
+section.header {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
+section.header .header-bg img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: auto;
+}
 
-section.header  .header-bg .overlay{
-  
+section.header .header-bg {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+section.header .header-bg .bg-overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
-  
+  background-size: cover;
+  background-position: center center;
   z-index: 2;
-  
+  top: 0px;
+  left: 0px;
   background-color: rgba(33, 33, 33, 0.85);
-  opacity: 0.6;
 }
 
 section.header .topbar-wrap {
-  
+  position: absolute;
   width: 100%;
- 
-  position: fixed;
-  background-color: #000000;
-  z-index: 999;
- 
+  height: auto;
+  z-index: 100;
+  top: 0px;
+  padding-top: 50px;
 }
 
 section.header .topbar-wrap .container {
@@ -2593,7 +2594,6 @@ section.header .topbar-wrap .logo-area {
   min-width: 250px;
   padding-left: 0px;
   padding-right: 0px;
-  padding: 10px;
 }
 
 section.header .topbar-wrap .menu-area .menu {
@@ -2602,7 +2602,7 @@ section.header .topbar-wrap .menu-area .menu {
 }
 
 section.header .topbar-wrap .menu-area {
-  padding-top: 24px;;
+  padding-left: 0px;
 }
 
 section.header .slantbar {
@@ -3096,8 +3096,10 @@ section.header .topbar {
 }
 
 section.header .topbar .menu .primary {
+  width: 100%;
+  text-align: left;
   height: 50px;
-  float: right;
+  float: left;
 }
 
 section.header .topbar .menu ul {
@@ -3939,6 +3941,9 @@ section.header .container .menu-mobile.open ul.menu {
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
+  .feature-block {
+    margin-bottom: 50px !important;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -3949,6 +3954,9 @@ section.header .container .menu-mobile.open ul.menu {
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+  section.header .header-bg img {
+    height: 100vh !important;
+  }
 }
 
 /* Large Devices, Wide Screens */
