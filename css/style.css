@@ -2941,7 +2941,7 @@ section.header .owl-theme .owl-controls .owl-pagination .owl-page:hover {
   }
   section.header .main-wrap h1 {
     line-height: 80px;
-    font-size: 60px;
+    font-size: 50px;
   }
   section.header .header-small .main-wrap h1 {
     font-size: 54px;
@@ -2958,6 +2958,12 @@ section.header .owl-theme .owl-controls .owl-pagination .owl-page:hover {
   }
   section.header .play-area span.small {
     font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section.header .main-wrap h1 {
+    font-size: 55px;
+    line-height: 70px;
   }
 }
 
