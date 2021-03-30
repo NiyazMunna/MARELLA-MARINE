@@ -514,6 +514,7 @@ section.bg-primary p {
   -ms-box-shadow: 0 4px 6px rgba(33, 33, 33, 0.1);
   -moz-box-shadow: 0 4px 6px rgba(33, 33, 33, 0.1);
   -webkit-box-shadow: 0 4px 6px rgba(33, 33, 33, 0.1);
+  cursor: pointer;
 }
 
 .service .service-wrap .pic {
@@ -574,6 +575,8 @@ section.bg-primary p {
 .service .service-wrap .info {
   padding: 45px 30px;
   text-align: center;
+  cursor: pointer;
+  text-justify: auto;
 }
 
 .service .service-wrap .info .title {
