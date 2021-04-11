@@ -220,7 +220,7 @@ section .headul:after {
   content: " ";
   width: 60px;
   height: 7px;
-  background-color: #03a9f4;
+  background-color: #77af51;
   display: block;
 }
 
@@ -232,14 +232,7 @@ section .headul.left-align:after {
   margin: 0 0 0 0;
 }
 
-section .headul:after {
-  margin: 0 auto;
-  content: " ";
-  width: 60px;
-  height: 6px;
-  background-color: #03a9f4;
-  display: block;
-}
+
 
 section .subheading {
   text-align: center;
